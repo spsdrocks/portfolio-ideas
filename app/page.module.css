@@ -1,0 +1,17 @@
+.slide-frame {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title-slide {
+    position: absolute;
+    right: 0%;
+}
