@@ -1,8 +1,12 @@
+.siteFrame {
+    width: 100%;
+    height: 100%;
+}
+
 .slideFrame {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
 }
 
 .slideWrapper {
@@ -12,21 +16,18 @@
 }
 
 .siteOverlay {
-    position: absolute;
-    
+    position: fixed;
+    z-index: 1;
 }
 
 .titleSlide {
-    position: absolute;
-    right: 0%;
+    background-color: aqua;
 }
 
 .aboutSlide {
-    position: absolute;
-    visibility: hidden; /* Element Hidden */
+    background-color: blue;
 }
 
 .gallerySlide {
-    position: absolute;
-    visibility: hidden; /* Element Hidden */
+    background-color: indianred;
 }

@@ -1,21 +1,58 @@
+"use client";
+
+import { useEffect } from "react";
 import styles from "./page.module.css";
 
 export default function Home() {
 
+  let overflowStatus = "visible";
+  let scrollPositionInitial = 0;
+
+  useEffect(() => {
+
+    document.addEventListener("scroll", () => {
+      
+      if (overflowStatus == "visible") {
+
+        let scrollPositionCurrent = window.scrollY;
+        let scrollStatus = (scrollPositionCurrent > scrollPositionInitial) ? "down" : "up";  
+
+        overflowStatus = "hidden";
+          
+        if (scrollStatus == "down") {
+
+          //window.scrollTo({ top: (scrollPosition + window.innerHeight), behavior: "smooth"});
+
+        }
+
+        scrollPositionInitial = scrollPositionCurrent;
+
+        overflowStatus = "visible";
+
+      }
+
+    });
+  
+  }, []);
+
   return (
     <>
-      <div className = {styles.slideFrame}>
+
+      <div className = {styles.siteFrame}>
         <SiteOverlay />
-        <TitlePage />
-        <AboutPage />
-        <GalleryPage />
+
+        <div className = {styles.slideFrame} style = {{overflow: `${overflowStatus}`}}>
+          <TitlePage />
+          <AboutPage />
+          <GalleryPage />
+        </div>
       </div>
     </>
   );
 }
 
 
-// Consider moving the ABSOLUTE divs into the home function and move the slides using a list
+
 
 
 function SiteOverlay() {
