@@ -2,13 +2,19 @@
 
 import { useEffect } from "react";
 import styles from "./page.module.css";
+import profileImage from "./img/Profile_Image.jpg";
 
-export default function Home() {
+const primaryColor = "#4C585B";
+const secondaryColor = "#7E99A3";
+const tertiaryColor = "#A5BFCC";
+const quateraryColor = "#F4EDD3";
+
+export default function Home() {  
 
   return (
     <>
       <div className = {styles.siteFrame}>
-        <SiteHeader />
+        {/* <SiteHeader /> */}
         <SiteSidebar />
 
         <div className = {styles.slideFrame} id = "SlideFrame">
@@ -24,7 +30,7 @@ export default function Home() {
 
 
 
-
+// Not In Use
 function SiteHeader() {
 
   return (
@@ -65,7 +71,12 @@ function SiteSidebar() {
     galleryCircle.addEventListener("click", () => handleCircleClick("GalleryPage"));
 
     // Page hover event listener
-    // Changing the color of the circles when on those pages is not finished
+    titlePage.addEventListener("mouseover", () => {titleCircle.style.backgroundColor = secondaryColor;});
+    titlePage.addEventListener("mouseout", () => {titleCircle.style.backgroundColor = primaryColor;});
+    aboutPage.addEventListener("mouseover", () => {aboutCircle.style.backgroundColor = secondaryColor;});
+    aboutPage.addEventListener("mouseout", () => {aboutCircle.style.backgroundColor = primaryColor;});
+    galleryPage.addEventListener("mouseover", () => {galleryCircle.style.backgroundColor = secondaryColor;});
+    galleryPage.addEventListener("mouseout", () => {galleryCircle.style.backgroundColor = primaryColor;});
 
     return () => {
       // Remove circle click event listeners
@@ -89,13 +100,19 @@ function SiteSidebar() {
 }
 
 
-
+// Profile image not working
 
 
 function TitlePage() {
   return (
     <section className = {`${styles.slideWrapper} ${styles.titleSlide}`} id = "TitlePage">
-      <h1>Test Text 1 - Title Page</h1>
+      <div className = {styles.titleContent}>
+        <div className = {styles.profileImage}>
+          <img src = {profileImage} alt = "Profile Image" />
+        </div>
+        <div className = {styles.socialLinks}></div>
+        <div className = {styles.aboutText}></div>
+      </div>
     </section>
   );
 }
