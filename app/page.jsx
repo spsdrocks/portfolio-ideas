@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import styles from "./page.module.css";
-import profileImage from "./img/Profile_Image.jpg";
 
 const primaryColor = "#4C585B";
 const secondaryColor = "#7E99A3";
@@ -107,11 +106,11 @@ function TitlePage() {
   return (
     <section className = {`${styles.slideWrapper} ${styles.titleSlide}`} id = "TitlePage">
       <div className = {styles.titleContent}>
-        <div className = {styles.profileImage}>
-          <img src = {profileImage} alt = "Profile Image" />
+        <div className = {styles.profileImageGrid}>
+          <img src = "https://i.imgur.com/KbqhDin.jpg" alt = "Profile Image" className = {styles.profileImage} />
         </div>
-        <div className = {styles.socialLinks}></div>
-        <div className = {styles.aboutText}></div>
+        <div className = {styles.socialLinksGrid}></div>
+        <div className = {styles.aboutTextGrid}></div>
       </div>
     </section>
   );
