@@ -99,7 +99,14 @@ function SiteSidebar() {
 }
 
 
-// Profile image not working
+/*
+Socials:
+
+ - LinkedIn:  https://www.linkedin.com/in/simonduke06/   https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png
+ - GitHub:    https://github.com/spsdrocks               https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png
+ - Instagram: https://www.instagram.com/s_duke_06/       https://cdn-icons-png.flaticon.com/512/5968/5968776.png
+
+*/
 
 
 function TitlePage() {
@@ -109,7 +116,16 @@ function TitlePage() {
         <div className = {styles.profileImageGrid}>
           <img src = "https://i.imgur.com/KbqhDin.jpg" alt = "Profile Image" className = {styles.profileImage} />
         </div>
-        <div className = {styles.socialLinksGrid}></div>
+        <div className = {styles.socialLinksGrid}>
+          <div className = {styles.socialLinks}>
+            <img src = "" alt = "" className = {styles.socialLogo} />
+            <p className = {styles.socialText}>LinkedIn</p>
+            <img src = "" alt = "" className = {styles.socialLogo} />
+            <p className = {styles.socialText}>GitHub</p>
+            <img src = "" alt = "" className = {styles.socialLogo} />
+            <p className = {styles.socialText}>Instagram</p>
+          </div>
+        </div>
         <div className = {styles.aboutTextGrid}></div>
       </div>
     </section>
