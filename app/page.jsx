@@ -133,7 +133,15 @@ function TitlePage() {
             <p className = {styles.socialText}>Instagram</p>
           </a>
         </div>
-        <div className = {styles.aboutTextGrid}></div>
+        <div className = {styles.aboutTextGrid}>
+          <div className = {styles.aboutTextWrapper}>
+            <h1>I'm Simon</h1>
+            <br /><br />
+            <p>I am currently a student at the University of British Columbia studying sciences. My main interests there are computer science and data science. I have experience with basic web development (HTML, CSS, JS, React) along with Java.</p>
+            <br /><br /><br />
+            <p>Beyond my interest in computer science I am a rock climber of over 10 years. Through this I have worked as a climbing coach. Check my Linkedin for more on my skills and experience.</p>
+          </div>
+        </div>
       </div>
     </section>
   );
