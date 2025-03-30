@@ -103,7 +103,7 @@ function SiteSidebar() {
 Socials:
 
  - LinkedIn:  https://www.linkedin.com/in/simonduke06/   https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png
- - GitHub:    https://github.com/spsdrocks               https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png
+ - GitHub:    https://github.com/spsdrocks               https://cdn-icons-png.flaticon.com/512/25/25231.png
  - Instagram: https://www.instagram.com/s_duke_06/       https://cdn-icons-png.flaticon.com/512/5968/5968776.png
 
 */
@@ -116,15 +116,22 @@ function TitlePage() {
         <div className = {styles.profileImageGrid}>
           <img src = "https://i.imgur.com/KbqhDin.jpg" alt = "Profile Image" className = {styles.profileImage} />
         </div>
+
         <div className = {styles.socialLinksGrid}>
-          <div className = {styles.socialLinks}>
-            <img src = "" alt = "" className = {styles.socialLogo} />
+          <a href = "https://www.linkedin.com/in/simonduke06/" target = "_blank" className = {styles.socialLinksWrapper}>
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt = "LinkedIn Icon" className = {styles.socialLogos} />
             <p className = {styles.socialText}>LinkedIn</p>
-            <img src = "" alt = "" className = {styles.socialLogo} />
+          </a>
+
+          <a href = "https://github.com/spsdrocks" target = "_blank" className = {styles.socialLinksWrapper}>
+            <img src = "https://cdn-icons-png.flaticon.com/512/25/25231.png" alt = "" className = {styles.socialLogos} />
             <p className = {styles.socialText}>GitHub</p>
-            <img src = "" alt = "" className = {styles.socialLogo} />
+          </a>
+
+          <a href = "https://www.instagram.com/s_duke_06/" target = "_blank" className = {styles.socialLinksWrapper}>
+            <img src = "https://cdn-icons-png.flaticon.com/512/5968/5968776.png" alt = "" className = {styles.socialLogos} />
             <p className = {styles.socialText}>Instagram</p>
-          </div>
+          </a>
         </div>
         <div className = {styles.aboutTextGrid}></div>
       </div>
