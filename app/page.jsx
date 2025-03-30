@@ -154,7 +154,7 @@ function TitlePage() {
 function AboutPage() {
   return (
     <section className = {`${styles.slideWrapper} ${styles.aboutSlide}`} id = "AboutPage">
-      <h1>Test Text 2 - About Page</h1>
+
     </section>
   );
 }
@@ -166,7 +166,7 @@ function AboutPage() {
 function GalleryPage() {
   return (
     <section className = {`${styles.slideWrapper} ${styles.gallerySlide}`} id = "GalleryPage">
-      <h1>Test Text 3 - Gallery Page</h1>
+   
     </section>
   );
 }
