@@ -179,4 +179,18 @@
     .titleContent {
         display: block;
     }
+
+    .profileImageGrid {
+        padding: 14% 10% 0 10%;
+    }
+
+    .socialLinksWrapper {
+        margin: 35px 10%;
+    }
+
+    .aboutTextGrid {
+        padding: 0;
+        margin-left: 0;
+        margin-top: 15%;
+    }
 }
