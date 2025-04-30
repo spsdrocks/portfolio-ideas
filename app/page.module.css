@@ -110,7 +110,8 @@
 }
 
 .socialLinksWrapper:hover {
-    background-color: var(--tertiary-color);
+    /* background-color: var(--tertiary-color); */
+    color: var(--tertiary-color);
 }
 
 .socialLogos {

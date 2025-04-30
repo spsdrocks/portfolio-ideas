@@ -3,10 +3,15 @@
 import { useEffect } from "react";
 import styles from "./page.module.css";
 
-const primaryColor = "#4C585B";
-const secondaryColor = "#7E99A3";
-const tertiaryColor = "#A5BFCC";
-const quateraryColor = "#F4EDD3";
+// const primaryColor = "#4C585B";
+// const secondaryColor = "#7E99A3";
+// const tertiaryColor = "#A5BFCC";
+// const quateraryColor = "#F4EDD3";
+
+const primaryColor = "#F1EFEC";
+const secondaryColor = "#D4C9BE";
+const tertiaryColor = "#123458";
+const quateraryColor = "#030303";
 
 export default function Home() {  
 
