@@ -3,15 +3,15 @@
 import { useEffect } from "react";
 import styles from "./page.module.css";
 
-// const primaryColor = "#4C585B";
-// const secondaryColor = "#7E99A3";
-// const tertiaryColor = "#A5BFCC";
-// const quateraryColor = "#F4EDD3";
+const primaryColor = "#4C585B";
+const secondaryColor = "#7E99A3";
+const tertiaryColor = "#A5BFCC";
+const quateraryColor = "#F4EDD3";
 
-const primaryColor = "#F1EFEC";
-const secondaryColor = "#D4C9BE";
-const tertiaryColor = "#123458";
-const quateraryColor = "#030303";
+// const primaryColor = "#F1EFEC";
+// const secondaryColor = "#D4C9BE";
+// const tertiaryColor = "#123458";
+// const quateraryColor = "#030303";
 
 export default function Home() {  
 
@@ -142,7 +142,7 @@ function TitlePage() {
           <div className = {styles.aboutTextWrapper}>
             <h1>I'm Simon</h1>
             <br /><br />
-            <p>I am currently a student at the University of British Columbia studying sciences. My main interests there are computer science and data science. I have experience with basic web development (HTML, CSS, JS, React) along with Java.</p>
+            <p>I am currently a student at the University of British Columbia studying sciences. My main interests there are computer science and data science. I often work in Java, C, C++, R, and Python. I have experience with web development in the form of apps using HTML, CSS, JavaScript, and React. I am also profficient in source control and Docker.</p>
             <br /><br /><br />
             <p>Beyond my interest in computer science I am a rock climber of over 10 years. Through this I have worked as a climbing coach. Check my Linkedin for more on my skills and experience.</p>
           </div>
