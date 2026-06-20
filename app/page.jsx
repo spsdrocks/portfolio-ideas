@@ -107,7 +107,7 @@ function SiteSidebar() {
 /*
 Socials:
 
- - LinkedIn:  https://www.linkedin.com/in/simonduke06/   https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png
+ - LinkedIn:  https://www.linkedin.com/in/simonduke06/   https://similarpng.com/_next/image?url=https%3A%2F%2Fimage.similarpng.com%2Ffile%2Fsimilarpng%2Fvery-thumbnail%2F2020%2F05%2FIcon-Linkedin-PNG.png&w=3840&q=75
  - GitHub:    https://github.com/spsdrocks               https://cdn-icons-png.flaticon.com/512/25/25231.png
  - Instagram: https://www.instagram.com/s_duke_06/       https://cdn-icons-png.flaticon.com/512/5968/5968776.png
 
@@ -124,7 +124,7 @@ function TitlePage() {
 
         <div className = {styles.socialLinksGrid}>
           <a href = "https://www.linkedin.com/in/simonduke06/" target = "_blank" className = {styles.socialLinksWrapper}>
-            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt = "LinkedIn Icon" className = {styles.socialLogos} />
+            <img src = "https://similarpng.com/_next/image?url=https%3A%2F%2Fimage.similarpng.com%2Ffile%2Fsimilarpng%2Fvery-thumbnail%2F2020%2F05%2FIcon-Linkedin-PNG.png&w=3840&q=75" alt = "LinkedIn Icon" className = {styles.socialLogos} />
             <p className = {styles.socialText}>LinkedIn</p>
           </a>
 
